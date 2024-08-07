@@ -17,25 +17,31 @@ To get started with the project, follow these steps:
 
 # Clone the repository:
 
-
+```
 * git clone https://github.com/juliettengum/ngum-social-network-api
 * cd social-network-api
+```
+```
 * Install dependencies: 
 
-
 * npm install
+```
 
 * Set up the environment variables:
 Create a .env file in the root directory and add your MongoDB connection string:
+```
 * MONGODB_URI=mongodb://localhost:27017/SocialDB
+```
 * Start the server:
+ ```
 * node server.js
-
+```
 ## Usage
 Use a tool like Insomnia or Postman to test the API endpoints.
 
 ## API Endpoints
 # Users
+```
 * Create a new user:
 Method: POST
 URL: /api/users
@@ -45,17 +51,20 @@ json
  "username": "testUser",
   "email": "test@example.com"
 }
-
+```
+```
 * Get all users:
 
 Method: GET
 URL: /api/users
-
+```
+```
 * Get a single user by ID:
 
 Method: GET
 URL: /api/users/:id
-
+```
+```
 * Update a user by ID:
 
 Method: PUT
@@ -66,23 +75,27 @@ json
   "username": "updatedUser",
   "email": "updated@example.com"
 }
-
+```
+```
 * Delete a user by ID:
 
 Method: DELETE
 URL: /api/users/:id
-
+```
+```
 * Add a friend to a user's friend list:
 
 Method: POST
 URL: /api/users/:userId/friends/:friendId
-
+```
+```
 * Remove a friend from a user's friend list:
 
 Method: DELETE
 URL: /api/users/:userId/friends/:friendId
-
+```
 # Thoughts
+```
 * Create a new thought:
 
 Method: POST
@@ -94,16 +107,20 @@ json
   "username": "testUser",
   "userId": "user-id"
 }
-
+```
+```
 * Get all thoughts:
 
 Method: GET
 URL: /api/thoughts
-Get a single thought by ID:
+```
+```
+* Get a single thought by ID:
 
 Method: GET
 URL: /api/thoughts/:id
-
+```
+```
 * Update a thought by ID:
 
 Method: PUT
@@ -113,28 +130,32 @@ json
 {
   "thoughtText": "Updated thought text"
 }
+```
+```
 * Delete a thought by ID:
 
 Method: DELETE
 URL: /api/thoughts/:id
-Reactions
-Create a reaction to a thought:
+```
+## Reactions
+```
+* Create a reaction to a thought:
 
 Method: POST
 URL: /api/thoughts/:thoughtId/reactions
 Body:
 json
-Copy code
 {
   "reactionBody": "This is a reaction",
   "username": "testUser"
 }
-
+```
+```
 * Remove a reaction from a thought:
 
 Method: DELETE
 URL: /api/thoughts/:thoughtId/reactions/:reactionId
-
+```
 ## Walkthrough Video
 
 For a detailed walkthrough of the application and its features, check out the video here.
