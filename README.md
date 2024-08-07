@@ -1,5 +1,5 @@
-Social Network API
-Description
+## Social Network API
+## Description
 The Social Network API is a backend application that allows users to interact with a social network platform. Users can share their thoughts, react to friends' thoughts, and create a friend list. This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
 ## Table of Contents
@@ -18,7 +18,7 @@ To get started with the project, follow these steps:
 # Clone the repository:
 
 
-* git clone https://github.com/your-username/social-network-api.git
+* git clone https://github.com/juliettengum/ngum-social-network-api
 * cd social-network-api
 * Install dependencies: 
 
