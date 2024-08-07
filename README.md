@@ -34,7 +34,7 @@ Create a .env file in the root directory and add your MongoDB connection string:
 ## Usage
 Use a tool like Insomnia or Postman to test the API endpoints.
 
-*API Endpoints*
+## API Endpoints
 # Users
 * Create a new user:
 Method: POST
